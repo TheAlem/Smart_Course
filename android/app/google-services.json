@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430096437897",
+    "project_id": "aulasmart-b556a",
+    "storage_bucket": "aulasmart-b556a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430096437897:android:ebbbaee71fcc7c65d6ec58",
+        "android_client_info": {
+          "package_name": "com.example.curse_smart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgjXNoyyEbJBMw1B_4xW9odMwQDblODog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
