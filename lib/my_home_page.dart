@@ -22,8 +22,8 @@ class _MyHomePageState extends State<MyHomePage> {
           rol: 'Docente',
         ),
       );
-      if (historial.length > 5) {
-        historial = historial.sublist(0, 5);
+      if (historial.length > 4) {
+        historial = historial.sublist(0, 4);
       }
     });
   }
@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color (0xFF9c0444),
+      backgroundColor: Color(0xFF9c0444),
       body: SafeArea(
         child: Center(
           child: Column(
