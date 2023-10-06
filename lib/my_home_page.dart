@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'ElectricityChart.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -31,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF9c0444),
+      backgroundColor: Color(0xE3520202),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -59,7 +60,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               size: 27,
                             ),
                             onPressed: () {
-                              print('Menú presionado');
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => ElectricityChart(),
+                                ),
+                              );
                             },
                           ),
                           const Text(
@@ -87,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Icon(
                           isSwitchedOn ? Icons.lock_open : Icons.lock_outline,
                           color:
-                              isSwitchedOn ? Colors.yellow : Color(0xFFa01c5c),
+                              isSwitchedOn ? Colors.yellow : Color(0xE3520202),
                           size: 100,
                           key: ValueKey<bool>(isSwitchedOn),
                         ),
